@@ -11,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gofrs/flock"
+	"github.com/aaydin-tr/flock"
 )
 
 func ExampleFlock_Locked() {
