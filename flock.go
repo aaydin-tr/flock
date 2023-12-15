@@ -83,6 +83,10 @@ func (f *Flock) String() string {
 	return f.path
 }
 
+func (f *Flock) File() *os.File {
+	return f.fh
+}
+
 // TryLockContext repeatedly tries to take an exclusive lock until one of the
 // conditions is met: TryLock succeeds, TryLock fails with error, or Context
 // Done channel is closed.
